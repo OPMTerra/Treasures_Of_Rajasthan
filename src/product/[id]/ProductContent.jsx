@@ -148,7 +148,7 @@ export default function ProductContent() {
                   <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                     <img 
                       src={productImages[currentImageIndex]} 
-                      alt={`${product.name} - Image ${currentImageIndex + 1}`}
+                      alt={`${product.name} ${currentImageIndex + 1}`}
                       className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     
@@ -428,4 +428,5 @@ export default function ProductContent() {
       />
     </>
   );
+
 }
