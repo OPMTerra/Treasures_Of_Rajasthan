@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import BackButton from '../components/BackButton';
 import ProgressBar from '../components/ProgressBar';
@@ -517,4 +517,5 @@ export default function Checkout() {
       />
     </>
   );
+
 }
