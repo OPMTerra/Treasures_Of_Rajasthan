@@ -21,12 +21,16 @@ export default function Confirmation() {
 
   useEffect(() => {
     setShowConfetti(true);
-    const subtotal = state.total;
-    const tax = Math.round(subtotal * 0.18);
-    setOrderTotal(subtotal + tax); // Store the total before clearing the cart
-    setTimeout(() => setShowConfetti(false), 2000);
-    dispatch({ type: 'CLEAR_CART' });
-  }, [dispatch]);
+    if (orderTotal === null && state.total > 0) {
+      const subtotal = state.total;
+      const tax = Math.round(subtotal * 0.18);
+      setOrderTotal(subtotal + tax); 
+      setTimeout(() => setShowConfetti(false), 2000);
+      dispatch({ type: 'CLEAR_CART' });
+    } else {
+      setTimeout(() => setShowConfetti(false), 2000);
+    }
+  }, [dispatch, state.total, orderTotal]);
 
   const handleAuth = (email, isSignUp) => {
     login(email);
@@ -45,6 +49,9 @@ export default function Confirmation() {
         break;
       case 'whatsapp':
         window.open(`https://wa.me/?text=${encodeURIComponent(message + ' ' + url)}`);
+        break;
+        default:
+        // Optionally log or ignore
         break;
     }
   };
@@ -309,4 +316,5 @@ export default function Confirmation() {
       </style>
     </>
   );
+
 }
