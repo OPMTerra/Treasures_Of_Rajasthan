@@ -371,15 +371,15 @@ export default function Home() {
                 Connect
               </h3>
               <div className="flex gap-4">
-                <a href="#" className="transition-all duration-300 hover:transform hover:scale-110" style={{ color: 'var(--neutral)' }}>
+                <span className="transition-all duration-300 hover:transform hover:scale-110" style={{ color: 'var(--neutral)' }}>
                   <i className="ri-facebook-fill text-xl"></i>
-                </a>
-                <a href="#" className="transition-all duration-300 hover:transform hover:scale-110" style={{ color: 'var(--neutral)' }}>
+                </span>
+                <span className="transition-all duration-300 hover:transform hover:scale-110" style={{ color: 'var(--neutral)' }}>
                   <i className="ri-instagram-line text-xl"></i>
-                </a>
-                <a href="#" className="transition-all duration-300 hover:transform hover:scale-110" style={{ color: 'var(--neutral)' }}>
+                </span>
+                <span className="transition-all duration-300 hover:transform hover:scale-110" style={{ color: 'var(--neutral)' }}>
                   <i className="ri-twitter-fill text-xl"></i>
-                </a>
+                </span>
               </div>
             </div>
           </div>
@@ -400,4 +400,5 @@ export default function Home() {
       />
     </>
   );
+
 }
