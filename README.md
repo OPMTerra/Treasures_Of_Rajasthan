@@ -1,6 +1,6 @@
 # Treasures of Rajasthan – Handcraft E-Commerce Site
 
-Welcome to the source code for **Treasures of Rajasthan**, a modern e-commerce web application showcasing handcrafted products from Rajasthan, India. This project is built with React, Tailwind CSS, and features a custom shopping cart, checkout flow, and product customization experience.
+Welcome to the source code for **Treasures of Rajasthan**, a modern e-commerce web application showcasing handcrafted products from Rajasthan, India. This project is built with React, Tailwind CSS, and features a custom shopping cart, checkout flow, smooth and product customization experience.
 
 ## 🌐 Live Demo
 
